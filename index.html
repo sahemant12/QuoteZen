@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>QuoteZen</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <h1 id="quotezen">QuoteZen</h1>
+        <div class="quote-container">
+            <div class="share hidden">
+                <button id="share-btn"><i class="fa-brands fa-x-twitter" style="color: #000000;"></i></button>
+                <p id="share-X" style="display:none">share<i class="fa-solid fa-share" style="color: #fff;"></i></p>
+            </div>
+            <div class="quote">
+                <p id="quote-value"></p>
+            </div>
+            <div class="author-export">
+                <h3 id="author"></h3>
+                <button id="export-btn" class="hidden"><i class="fa-solid fa-file-export" style="color: #fff;"></i> Export</button>
+            </div>
+        </div>
+        <div class="newQuote">
+            <button id="newQuote-btn">NEW QUOTE</button>
+            <button id="clipBoard-btn">
+                <i class="fa-solid fa-clipboard" id="default-icon"></i>
+                <i class="fa-solid fa-clipboard-check hidden" id="copied-icon"><span>Copied</span></i>
+            </button>
+        </div>
+    </div>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
